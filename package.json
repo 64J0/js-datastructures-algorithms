@@ -1,0 +1,19 @@
+{
+  "name": "javascript-datastructures-algorithms",
+  "version": "1.0.0",
+  "description": "Um projeto criado para estudar estruturas de dados e algoritmos no javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": ["data structures", "algorithms", "javascript"],
+  "author": "64J0 <https://github.com/64J0>",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.27.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
