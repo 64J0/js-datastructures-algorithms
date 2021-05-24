@@ -2,7 +2,8 @@
 
 Estruturas de dados implementadas:
 
-* Pilha (stack) -> **FIFO**
+* Pilha (stack) -> **FILO**
+* Fila (queue) -> **FIFO**
 
 > As pilhas tem uma varidade de aplicações nos problemas do mundo real. Elas podem ser usadas para problemas de backtracking, a fim de lembrar as tarefas ou os caminhos visitados, e para desfazer ações.
 
