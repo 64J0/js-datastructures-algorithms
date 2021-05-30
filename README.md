@@ -2,17 +2,17 @@
 
 Estruturas de dados implementadas:
 
-* Pilha (stack) -> **FILO**
+### Pilha (stack) -> **FILO**
 
 > As pilhas tem uma varidade de aplicações nos problemas do mundo real. Elas podem ser usadas para problemas de backtracking, a fim de lembrar as tarefas ou os caminhos visitados, e para desfazer ações. - Loiane.
 
-* Fila (queue) -> **FIFO**
+### Fila (queue) -> **FIFO**
 
-* Deque (double-ended queue) -> filas de duas pontas ou fila duplamente terminada
+### Deque (double-ended queue) -> filas de duas pontas ou fila duplamente terminada
 
 > Em ciência da computação, uma aplicação comum de um deque é no armazenamento de uma lista de operações para desfazer ações (undo). Sempre que um usuário executar uma operação no software, um push dessa operação será feito no deque (exatamente como em uma pilha). Quando o usuário clicar no botão Undo (desfazer), uma operação de pop será efetuada no deque, o que significa que essa operação será removida do final. Depois de um número predefinido de operações, as operações mais antigas serão removidas da frente do deque. Como o deque implementa os princípios tanto de FIFO quanto de LIFO, podemos dizer também que o deque combina as estruturas de dados de fila e de pilha. - Loiane.
 
-* Lista ligadas
+### Lista ligadas (linked lists)
 
 > As listas ligadas armazenam uma coleção sequencial de elementos; no entanto, de modo diferente dos arrays, nas listas ligadas os elementos não são posicionados de forma contígua na memória. Cada elemento é constituído de um nó que armazena o elemento propriamente dito, além de uma referência (também conhecida como ponteiro ou ligação) que aponta para o próprio elemento. - Loiane.
 
@@ -30,13 +30,23 @@ Neste capítulo são apresentados diversos tipos de listas ligadas (_linked list
 
 Por fim, é apresentado pela autora a capacidade de criação de outras estruturas de dados como a pilha, fila e deque a partir da estrutura da LinkedList. Para exemplificar este procedimento é desenvolvido o algoritmo da **StackLinkedList**.
 
-### Configurações do projeto
+### Cojuntos (set)
+
+> Um conjunto (set) é uma coleção não ordenada de itens, composta de elementos únicos (isto é, não podem ser repetidos). Essa estrutura de dados usa o mesmo conceito matemático dos conjuntos finitos, porém aplicado a uma estrutura de dados em ciência da computação. - Loiane.
+
+> O conjunto é um dos conceitos mais básicos em matemática e é muito importante também em ciência da computação. Uma das principais aplicações em ciência da computação se dá em bancos de dados, que estão na base da maioria das aplicações. Os conjuntos são usados no design e no processamento de consultas (queries). Ao criar uma consulta para obter um conjunto de dados em um banco relacional (Oracle, Microsoft SQL Server, MySQL e assim por diante), fazemos o design da consulta usando a notação de conjunto, e o banco de dados também devolverá um conjunto de dados. Quando criamos uma consulta SQL, podemos especificar se queremos ler todos os dados de uma tabela ou apenas um subconjunto deles. Também podemos obter dados que são comuns a duas tabelas, os quais estão presentes apenas em uma tabela (e não na outra) ou nas duas (entre outras operações). Essas operações são conhecidas no mundo SQL como junções (joins), e a base das junções SQL são operações em conjuntos. - Loiane.
+
+> Os métodos ou funções que não tem efeito colateral são chamados de funções puras. Uma função pura não modifica a isntância atual nem os parâmetros: ela apenas gera um novo resultado. Esse é um conceito muito importante do paradigma de programação funcional. - Loiane.
+
+## Configurações do projeto
 
 * JS Modules
 * Node.js v14.17.0
 * ESLint
 
 ---
-### Referências:
+## Referências:
 
 [1] - Estruturas de Dados e Algoritmos com JavaScript: Escreva um Código JavaScript Complexo e Eficaz Usando a Mais Recente ECMAScript. Edição de 2019.
+
+[2] - Repositório com os códigos do livro: https://github.com/loiane/javascript-datastructures-algorithms.
