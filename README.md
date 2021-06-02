@@ -38,6 +38,10 @@ Por fim, é apresentado pela autora a capacidade de criação de outras estrutur
 
 > Os métodos ou funções que não tem efeito colateral são chamados de funções puras. Uma função pura não modifica a isntância atual nem os parâmetros: ela apenas gera um novo resultado. Esse é um conceito muito importante do paradigma de programação funcional. - Loiane.
 
+### Dicionário
+
+> Um dicionário é usado para armazenar pares [chave, valor], em que a chave pode ser usada para encontrar um elemento em particular. Um dicionário é muito parecido com um conjunto; um conjunto armazena uma coleção de elementos [chave, chave], enquanto um dicionário armazena uma coleção de elementos [chave, valor]. Um dicionário também é conhecido como **mapa** (map), **tabela de símbolos** e **array associativo**.
+
 ## Configurações do projeto
 
 * JS Modules
