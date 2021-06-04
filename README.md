@@ -40,13 +40,17 @@ Por fim, é apresentado pela autora a capacidade de criação de outras estrutur
 
 ### Dicionário
 
-> Um dicionário é usado para armazenar pares [chave, valor], em que a chave pode ser usada para encontrar um elemento em particular. Um dicionário é muito parecido com um conjunto; um conjunto armazena uma coleção de elementos [chave, chave], enquanto um dicionário armazena uma coleção de elementos [chave, valor]. Um dicionário também é conhecido como **mapa** (map), **tabela de símbolos** e **array associativo**.
+> Um dicionário é usado para armazenar pares [chave, valor], em que a chave pode ser usada para encontrar um elemento em particular. Um dicionário é muito parecido com um conjunto; um conjunto armazena uma coleção de elementos [chave, chave], enquanto um dicionário armazena uma coleção de elementos [chave, valor]. Um dicionário também é conhecido como **mapa** (map), **tabela de símbolos** e **array associativo**. - Loiane.
 
-## Configurações do projeto
+### HashTable
 
-* JS Modules
-* Node.js v14.17.0
-* ESLint
+> Também conhecida como HashMap: uma implementação com hash da classe Dictionary. - Loiane
+
+> O **hashing** consiste em encontrar um valor em uma estrutura de dados o mais rápido possível. Nos capítulos anteriores, vimos que, se quisermos obter um valor de uma estrutura de dados (usando um método **get**), será necessário iterar por ela até que esse valor seja encontrado. Quando usamos uma função de hash, já sabemos em que posição o valor se encontra, portanto, podemos simplesmente o acessar. Uma função de hash é uma função que, dada uma key, devolve o endereço em que o valor está na tabela. - Loiane.
+
+> Em ciência da computação, a tabela hash tem vários casos de uso. Ela pode ser usada como arrays associativos, pois é uma implementação do dicionário, e também pode ser usada para indexar um banco de dados. Ao criar uma tabela em um banco de dados relacional como MySQL, Microsoft Server, Oracle e outros, é sempre uma boa prática criar um index para permitir uma pesquisa mais rápida da chave (key) do registro. Nesse caso, uma tabela hash pode ser criada para armazenar a key e a referência ao registro na tabela. - Loiane.
+
+> A função de hash que usaremos neste livro é a função mais comum existente, chamada de função de **hash lose-lose**, em que simplesmente somamos os valores ASCII de cada caractere da chave. - Loiane.
 
 ---
 ## Referências:

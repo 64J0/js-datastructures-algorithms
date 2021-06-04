@@ -1,4 +1,4 @@
-import {Compare, defaultCompare, defaultEquals} from '../util.js';
+import { Compare, defaultCompare, defaultEquals } from '../util.js';
 import LinkedList from './linked-list.js';
 
 class SortedLikedList extends LinkedList {

@@ -1,6 +1,6 @@
-import {defaultEquals} from '../util.js';
+import { defaultEquals } from '../util.js';
 import LinkedList from './linked-list.js';
-import {DoublyNode} from './models/linked-list-models.js';
+import { DoublyNode } from './models/linked-list-models.js';
 
 class DoublyLinkedList extends LinkedList {
   constructor(equalsFn = defaultEquals) {

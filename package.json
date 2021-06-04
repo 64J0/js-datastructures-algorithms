@@ -4,7 +4,8 @@
   "description": "Um projeto criado para estudar estruturas de dados e algoritmos no javascript",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js --ignore-pattern node_modules/ --fix"
   },
   "type": "module",
   "keywords": ["data structures", "algorithms", "javascript"],
