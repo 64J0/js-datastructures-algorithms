@@ -52,6 +52,14 @@ Por fim, é apresentado pela autora a capacidade de criação de outras estrutur
 
 > A função de hash que usaremos neste livro é a função mais comum existente, chamada de função de **hash lose-lose**, em que simplesmente somamos os valores ASCII de cada caractere da chave. - Loiane.
 
+### Recursão
+
+Porque usar recursão?
+
+A partir de testes realizados comparando as versões iterativas e recursivas de diversos algoritmos foi observado que mesmo aplicando a técnica de memoização o algoritmo iterativo é mais rápido. Então porque usar recursão?
+
+> A versão iterativa é muito mais rápida que as versões recursivas, portanto isso significa que a recursão é mais lenta. No entanto, observe novamente o código das três versões diferentes. A recursão é mais fácil de entender e, em geral, exige também menos código. Além do mais, em alguns algoritmos, a solução iterativa pode não estar disponível, e, com a eliminação da chamada de cauda (tail call), a penalidade da recursão pode até desaparecer. - Loiane.
+
 ---
 ## Referências:
 
