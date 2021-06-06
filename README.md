@@ -1,5 +1,14 @@
 # Estruturas de dados e algoritmos em Javascript
 
+Este repositório está sendo usado para armazenar os códigos desenvolvidos a partir da leitura do livro Estruturas de dados e algoritmos em Javascript. Segundo a própria autora, algoritmos são o estado da arte no que tange a ciência da computação e portanto um assunto muito importante para se conhecer.
+
+Ao longo do livro são apresentadas inicialmente algumas estruturas de dados mais comuns e que tem mais aplicações práticas. Em seguida é dado enfoque nos algoritmos e termos técnicos da área. Neste README estou colocando um resumo e citando alguns trechos que ajudam a compreender os conceitos abordados em cada capítulo.
+
+No final deste arquivo temos a seção de referências onde é possível obter o link que direciona para o repositório do livro onde temos os códigos criados pela autora. Além da versão em JavaScript são apresentados seus pares em TypeScript assim como uma série de testes automatizados criados utilizando as ferramentas mocha e chai.
+
+Após finalizar o livro pode-se continuar estudando a partir deste repositório.
+
+---
 Estruturas de dados implementadas:
 
 ### Pilha (stack) -> **FILO**
@@ -7,6 +16,8 @@ Estruturas de dados implementadas:
 > As pilhas tem uma varidade de aplicações nos problemas do mundo real. Elas podem ser usadas para problemas de backtracking, a fim de lembrar as tarefas ou os caminhos visitados, e para desfazer ações. - Loiane.
 
 ### Fila (queue) -> **FIFO**
+
+Tem o comportamento parecido com o de uma fila na vida real, por exemplo de pessoas na lotérica esperando para pagar alguma conta. Nesta estrutura de dados o primeiro dado a ser recebido é o primeiro a ser processado.
 
 ### Deque (double-ended queue) -> filas de duas pontas ou fila duplamente terminada
 
@@ -20,15 +31,15 @@ Estruturas de dados implementadas:
 
 Neste capítulo são apresentados diversos tipos de listas ligadas (_linked lists_). 
 
-É desenvolvido um algoritmo padrão em que cada nó da lista referencia apenas o elemento seguinte: **LinkedList**.
+* É desenvolvido um algoritmo padrão em que cada nó da lista referencia apenas o elemento seguinte: **LinkedList**.
 
-É desenvolvido um algoritmo que apresenta uma ligação dupla onde cada nó da lista referencia tanto o elemento seguinte quanto o anterior. Esta versão da lista é interessante caso seja necessário iterar pelos elementos a partir de uma posição arbitrária com a possibilidade de percorrer a lista tanto pra frente quanto pra trás. **DoublyLinkedList**.
+* É desenvolvido um algoritmo que apresenta uma ligação dupla onde cada nó da lista referencia tanto o elemento seguinte quanto o anterior. Esta versão da lista é interessante caso seja necessário iterar pelos elementos a partir de uma posição arbitrária com a possibilidade de percorrer a lista tanto pra frente quanto pra trás. **DoublyLinkedList**.
 
-É desenvolvida uma versão da lista ligada onde esta lista é circular, ou seja, o último nó referencia o primeiro: **CircularLinkedList**.
+* É desenvolvida uma versão da lista ligada onde esta lista é circular, ou seja, o último nó referencia o primeiro: **CircularLinkedList**.
 
-É desenvolvida uma versão da lista ligada onde os elementos são mantidos de maneira ordenada: **SortedLinkedList**.
+* É desenvolvida uma versão da lista ligada onde os elementos são mantidos de maneira ordenada: **SortedLinkedList**.
 
-Por fim, é apresentado pela autora a capacidade de criação de outras estruturas de dados como a pilha, fila e deque a partir da estrutura da LinkedList. Para exemplificar este procedimento é desenvolvido o algoritmo da **StackLinkedList**.
+* Por fim, é apresentado pela autora a capacidade de criação de outras estruturas de dados como a pilha, fila e deque a partir da estrutura da LinkedList. Para exemplificar este procedimento é desenvolvido o algoritmo da **StackLinkedList**.
 
 ### Cojuntos (set)
 
@@ -59,6 +70,37 @@ Porque usar recursão?
 A partir de testes realizados comparando as versões iterativas e recursivas de diversos algoritmos foi observado que mesmo aplicando a técnica de memoização o algoritmo iterativo é mais rápido. Então porque usar recursão?
 
 > A versão iterativa é muito mais rápida que as versões recursivas, portanto isso significa que a recursão é mais lenta. No entanto, observe novamente o código das três versões diferentes. A recursão é mais fácil de entender e, em geral, exige também menos código. Além do mais, em alguns algoritmos, a solução iterativa pode não estar disponível, e, com a eliminação da chamada de cauda (tail call), a penalidade da recursão pode até desaparecer. - Loiane.
+
+### Árvores
+
+> Uma árvore é um modelo abstrato de uma estrutura hierárquica. O exemplo mais comum de uma árvore na vida real seria o de uma árvore genealógica ou o organograma de uma empresa. - Loiane.
+
+* Árvores binárias
+
+> Um nó em uma árvore binária tem no máximo dois filhos: um filho à esquerda e um filho à direita. Essa definição nos permite escrever algoritmos mais eficazes para inserir, pesquisar e remover nós na/da árvore. As árvores binárias são muito usadas em ciência da computação. - Loiane.
+
+> Uma **BST (Binary Search Tree)** é uma árvore binária, mas permite armazenar somente nós com valores menores do lado esquerdo e nós com valores maiores do lado direito. [...] Essa é a estrutura de dados com a qual trabalharemos neste capítulo. - Loiane.
+
+> Assim como nas listas ligadas, trabalharemos novamente com ponteiros (referências) para representar a conexão entre os nós (chamadas de arestas - edges - na terminologia de árvore). - Loiane.
+
+[Visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern).
+
+* Árvore de Adelson-Velskii e Landi (AVL)
+
+> A árvore AVL é uma BST autobalanceada, o que significa que a altura das subárvores à esquerda e à direita de qualquer nó difere no máximo em 1. - Loiane.
+
+* Árvore rubro-negra (red-black tree)
+
+> Assim como a árvore AVL, a **árvore rubro-negra** é também uma árvore binária de busca autobalanceada. Vimos que inserir ou remover um nó da árvore AVL pode provocar rotações; assim, se precisarmos de uma árvore autobalanceada que envolva muitas inserções ou remoções frequentes, a árvore rubro-negra será preferível. Se as inserções e as remoções forem menos frequentes (estamos interessados em operações de busca frequentes), então a árvore AVL será preferível em relação à árvore rubro-negra. - Loiane.
+
+Na árvore rubro-negra, todo nó segue as regras listadas a seguir:
+
+1. Como o nome da árvore sugere, cada nó é vermelho ou preto.
+2. A raiz da árvore é preta.
+3. Todas as folhas são pretas (os nós representados com referência NULL).
+4. Ser um nó for vermelho, então seus dois filhos serão pretos.
+5. Não pode haver dois nós vermelhos adjacentes. Um nó vermelho não pode ter um pai ou um filho vermelho.
+6. Todo caminho (path) de um dado nó para qualquer um de seus descendentes (folhas NULL) contém o mesmo número de nós pretos.
 
 ---
 ## Referências:

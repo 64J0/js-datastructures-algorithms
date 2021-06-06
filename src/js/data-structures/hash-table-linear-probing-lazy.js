@@ -124,7 +124,7 @@ export default class HashTableLinearProbingLazy {
     let objString = `{${keys[0]} => ${this.table[keys[0]].toString()}}`;
     for (let i = 1; i < keys.length; i++) {
       objString = `${objString},{${keys[i]} => ${this.table[
-          keys[i]
+        keys[i]
       ].toString()}}`;
     }
     return objString;
